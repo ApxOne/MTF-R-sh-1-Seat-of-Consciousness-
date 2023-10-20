@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SCP MTF Rēsh-1</title>
+  <style>
+    :root {
+      --accent-color: rgb(100, 0, 0);
+      --dark-color: rgb(22, 0, 0);
+    }
+    .highlighter {
+      color: var(--accent-color);
+    }
+    .expoblock {
+      border: 2px solid var(--accent-color);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    /* Additional CSS styles can be added here */
+  </style>
+</head>
+<body>
+
+<div class="expoblock">
+  <h1><span class="highlighter">INFORMATIONAL NOTICE</span></h1>
+  <p>You have entered the hub for high-ranking Foundation personnel. The following file has been classified Level-5 in its entirety.</p>
+  <p>This is your last warning. <strong>DO NOT PROCEED WITHOUT PROPER AUTHENTICATION.</strong></p>
+</div>
+
+<!-- Tabview container -->
+<div id="tabview">
+  <!-- Tab buttons -->
+  <div class="tab-buttons">
+    <button onclick="openTab('entry')">ENTRY</button>
+    <button onclick="openTab('general-information')">GENERAL INFORMATION</button>
+    <button onclick="openTab('senior-field-command')">SENIOR FIELD COMMAND</button>
+    <button onclick="openTab('subdivisions')">SUBDIVISIONS</button>
+    <button onclick="openTab('sites-of-operations')">SITES OF OPERATIONS</button>
+    <button onclick="openTab('faction-advert')">FACTION ADVERT</button>
+    <button onclick="openTab('chain-of-command')">CHAIN OF COMMAND</button>
+  </div>
+
+  <!-- Tab content -->
+  <div id="entry" class="tab-content">
+    <p>PURPOSEFULLY LEFT BLANK, PROCEED</p>
+  </div>
+
+  <div id="general-information" class="tab-content">
+    <!-- General information content goes here -->
+  </div>
+
+  <div id="senior-field-command" class="tab-content">
+    <!-- Senior field command content goes here -->
+  </div>
+
+  <div id="subdivisions" class="tab-content">
+    <!-- Subdivisions content goes here -->
+  </div>
+
+  <div id="sites-of-operations" class="tab-content">
+    <!-- Sites of operations content goes here -->
+  </div>
+
+  <div id="faction-advert" class="tab-content">
+    <!-- Faction advert content goes here -->
+  </div>
+
+  <div id="chain-of-command" class="tab-content">
+    <!-- Chain of command content goes here -->
+  </div>
+</div>
+
+<!-- JavaScript for tabview functionality -->
+<script>
+  function openTab(tabId) {
+    // Hide all tab contents
+    var tabContents = document.getElementsByClassName('tab-content');
+    for (var i = 0; i < tabContents.length; i++) {
+      tabContents[i].style.display = 'none';
+    }
+
+    // Show the selected tab content
+    document.getElementById(tabId).style.display = 'block';
+  }
+
+  // Open the default tab
+  openTab('entry');
+</script>
+
+</body>
+</html>
